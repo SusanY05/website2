@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Survey</title>
+        <link rel="stylesheet" href = "css/survey.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIYAAACGCAMAAAAvpwKjAAAAYFBMVEX///8AAADx8fF7e3vt7e35+fnb29smJiYRERE/Pz/g4OBZWVloaGi8vLwfHx+UlJSHh4enp6e0tLRtbW3CwsJiYmLm5uYxMTHV1dVISEjIyMhRUVGOjo6BgYE3NzcrKys+evZcAAADFElEQVR4nO2b7ZZDMBBAmwiKaksXLS3v/5bbs/URmtGEoXucuf+ySG5lMyEyux1BEMS68PBsWeeQf1UiD1hNkH9NQiRMIhHfsUhd1sNN/4PFdzzs29CCsdv6GtG7BWPR6hoqC8bw2xF5pMCvj4ZSV0jdE9aHfdW1+YSxFGXKn/tTH7aaP3gO547XlKz68I/y4sy40yxlPa2GXTQ1//1C0TgX9phGpznTotEQVV0+vcqnuliJcQ0zDweqpdVogkb8Ksd10f2kwRwDjQdYiz/QuL/K94GGD1bw0LewS6iSYjfQqP680qaPGo2dIri9KG1tDQ7VUTW3tNVg5ZXzaztSWg2nUtfAmP4zAaRhtZOGkCaUTBrarcYuvSBqlKHdIZ0h3ua1ocaT7koedqoTNDIfOEPs1Rp7KFA67gyNO3TGFbjj8HhsB98EjR/ojEQt8XwGg65oIguihn2GLJ43EBiQ6Bp2XKgNXhTxCho8Bvuj4xC/t4WqEQEDdYj7NqVjasBzzRvDuQNRA5z+VQymdDyN3MSCsf57HJ5GoG4OIlhGA36GAOhFVDSNu7oxmN5UgKahETD69AI7lgb31I3BePJ0i6WRJoEhifxqjdYptjHy1QvMsFMgDdIgjbU0rmNR6qJVMYYGvE7wpNRaS5qj0SxljT7weKtpjN6NbDWNNB4h1FqxwNBAgDRIgzTW0uDOJOSAghNF9xNw5QW8xYM5yHGjGnnpTeCGrWGLSch1bmjAkgZpkIaOhnPW5AGKrxvMwQ9B62qc/ofGonfDP2lyBzc8bWikkAZpkIaOhi24PkLZEMqT+dHV53hYSsPsPSVQ1bkhjXx/1Gev3DyB8i/qm6DcNrqhAUsapEEaOhqpamtwj4/bQNcJ5h93CZMGtsb1cBkn+fipdEMjZTsaIWmQBmksrIGYixTN0Cg+n6tLMUODWUipe6LbeDspFSI7mJGokfIz5mdkoGCgASaXzKcyyFmFcksQuOhbTPzuqoXRVjLDTdT6KNc+QASYAjWPm2EAGMv9mM5ZP42rgUcPC5VH9N3EboIgtsUv5HFPlxCxQJ8AAAAASUVORK5CYII=">
+    </head>
+    <body>
+        <div class = "icon-bar">
+            <a class="active" href="main.html"><i class = "fa fa-home" style="text-align:center">Home</i></a>
+                <a href="menu.html"><i class="fa-solid fa-book-open ">Menu</i></a>
+                <a href="booking.html"><i class="fa-solid fa-calendar-check">Book</i></a>
+                <a href="coupon.html"><i class="fa-solid fa-tag">Deal</i></a>
+        </div>
+        <h1 style="text-align:center">Feedback from tonight</h1>
+        <form action="/action_page.php">
+            <div class="question">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" placeholder="John" required><br><br>
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" placeholder="whatever" required><br><br>
+                <label for="chef" required>Who is your chef tonight?</label>
+                    <select id="chef">
+                        <option value="horst">Horst</option>
+                        <option value="remy">Remy</option>
+                        <option value="colette tatou">Colette Tatou</option>
+                        <option value="skinner">Skinner</option>
+                        <option value="larousse">Larousse</option>
+                        <option value="pompidou">Pompidou</option>
+                    </select><br><br>
+                <label for="rate">How are they doing tonight?</label>
+                    <select id="rate">
+                        <option value="very great">I'm very happen with the food</option>
+                        <option value="ok">The food was okay</option>
+                        <option value="bad">The worst food I've ever eaten</option>
+                    </select><br><br>
+                <label for="waiter">Who is your waiter tonight?</label>
+                    <select id="waiter">
+                        <option value="Mustafa">Mustafa</option>
+                        <option value="Alfredo">Alfredo Linguini</option>
+                    </select><br><br>
+                <label for="service">How are their service tonight?</label>
+                    <select id="service">
+                        <option value="Very good">Very good</option>
+                        <option value="good">Good</option>
+                        <option value="bad">Bad</option>
+                    </select><br><br>
+                <label for="environment">How was the dinning environment tonight?</label>
+                    <select id="environment">
+                        <option value="Very nice">Very nice</option>
+                        <option value="It was okay">It was okay</option>
+                        <option value="Horrible">Horrible!</option>
+                    </select><br><br>
+                <label>Would you recommend Gusteau to your friend</label><br><br>
+                    <label for="recommed-1">
+                        <input type="radio"
+                                id="recommed-1"
+                                name="recommed">Yes</input>
+                    </label><br>
+                    <label for="recommed-2">
+                        <input type="radio"
+                               id="recommed-2"
+                               name="recommed">No</input>
+                    </label><br>
+                    <label for="recommed-3">
+                        <input type="radio"
+                               id="recommed-3"
+                               name="recommed">Maybe</input>
+                    </label><br><br>
+                <label>Would you come back to dine again?</label><br><br>
+                    <label for="recommed-1">
+                        <input type="radio"
+                                id="recommed-1"
+                                name="recommed">Yes</input>
+                    </label><br>
+                    <label for="recommed-2">
+                        <input type="radio"
+                               id="recommed-2"
+                               name="recommed">No</input>
+                    </label><br>
+                    <label for="recommed-3">
+                        <input type="radio"
+                               id="recommed-3"
+                               name="recommed">Maybe</input>
+                    </label><br><br>
+                <button type="submit">Submit!</button>
+        <script src="https://kit.fontawesome.com/16785e6478.js" crossorigin="anonymous"></script>
+    </body>
+</html>

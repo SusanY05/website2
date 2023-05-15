@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lobster&display=swap');
+
+body{
+    font-family: 'Dancing Script', cursive;
+    background-color:#f0faef;
+}
+
+.card{
+    width: 100%;
+    margin:auto;
+    text-align:center;
+    display:flex;
+    height:100%;
+    font-family: 'Dancing Script', cursive;
+}
+
+.price{
+    color:grey;
+    font-size:22px;
+}
+
+.card button{
+    border:none;
+    outline:0;
+    padding:12px;
+    color:white;
+    background-color:#000;
+    text-align:center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover{
+    opacity: 0.7;
+}
+
+.row{
+    display:flex;
+}
+
+.column{
+    flex: 33.33%;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding:5px;
+    height: 100%;
+    position: relative;
+    margin:3px;
+    background-color:;
+}
+
+.Row-1-container{
+    border:none;
+    display:flex;
+
+}
+
+button {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+.row-2-container{
+    border:none;
+    padding-top:20px;
+    display:flex;
+    margin:0;
+}
+
+.row-3-container{
+    border:none;
+    padding-top:20px;
+    display:flex;
+    margin:0;
+}
+
+.row-4-container{
+    border:none;
+    padding-top:20px;
+    display:flex;
+    margin:0;
+}
+
+.icon-bar{
+    width:100%;
+    background-color:#a8e6cf;
+    overflow:auto;
+    display:flex;
+}
+
+.icon-bar a{
+    float:left;
+    text-align:center;
+    width:25%;
+    font-size:36px;
+    padding:12px 0;
+    transition:all 0.3s ease;
+    color:#ffaaa5;
+    display:flex;
+    justify-content: center;
+}
+
+.icon-bar a:hover{
+    background-color:#ffd3b6;
+}
+
+.active{
+    background-color:#dcedc1;
+}
+
